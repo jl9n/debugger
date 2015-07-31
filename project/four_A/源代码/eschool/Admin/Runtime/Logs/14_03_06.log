@@ -1,0 +1,139 @@
+[ 2014-03-06T00:41:57+08:00 ] 127.0.0.1 /eschool/admin.php/Test/index?_=1394037716669
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002982s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003127s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002943s ]
+SQL: SHOW COLUMNS FROM `edu_test` [ RunTime:0.004821s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `edu_test` LIMIT 1   [ RunTime:0.001130s ]
+SQL: SELECT * FROM `edu_test` ORDER BY id desc LIMIT 0,10   [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `edu_cat` [ RunTime:0.003771s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 28 ) LIMIT 1   [ RunTime:0.001837s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000535s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000608s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000404s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 29 ) LIMIT 1   [ RunTime:0.000376s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 28 ) LIMIT 1   [ RunTime:0.000376s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 9 ) LIMIT 1   [ RunTime:0.000373s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 25 ) LIMIT 1   [ RunTime:0.000350s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 14 ) LIMIT 1   [ RunTime:0.000458s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 15 ) LIMIT 1   [ RunTime:0.000474s ]
+NOTIC: [8] Undefined variable: search C:\AppServ\www\eschool\Admin\Lib\Action\CommonAction.class.php 第 310 行.
+NOTIC: [8] Undefined index:  values C:\AppServ\www\eschool\Admin\Lib\Action\CommonAction.class.php 第 311 行.
+NOTIC: [8] Undefined index:  id C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 179 行.
+SQL: SELECT `id`,`name`,`path` FROM `edu_cat` ORDER BY concat(path,id)  [ RunTime:0.000914s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for ./Admin/Runtime/Cache\27936ffbb68ef4d959ca7516f4b36f2666750584.file.index.html.php C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(./Admin/Runtime/Cache\27936ffbb68ef4d959ca7516f4b36f2666750584.file.index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+NOTIC: [8] Undefined index:  _order C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 32 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 34 行.
+NOTIC: [8] Undefined index:  title C:\AppServ\www\eschool\Admin\Runtime\Cache\27936ffbb68ef4d959ca7516f4b36f2666750584.file.index.html.php 第 44 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\27936ffbb68ef4d959ca7516f4b36f2666750584.file.index.html.php 第 75 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.191810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.191951s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002395s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002340s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002446s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010659s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002613s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002699s ]
+
+[ 2014-03-06T00:42:01+08:00 ] 127.0.0.1 /eschool/admin.php/Test/add?_=1394037720724
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002937s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003059s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002803s ]
+NOTIC: [8] Undefined index:  id C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `edu_cat` [ RunTime:0.003098s ]
+SQL: SELECT `id`,`name`,`path` FROM `edu_cat` ORDER BY concat(path,id)  [ RunTime:0.001207s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for ./Admin/Runtime/Cache\ba411e36c4770066e0ee00a198b4897e5702beb0.file.add.html.php C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(./Admin/Runtime/Cache\ba411e36c4770066e0ee00a198b4897e5702beb0.file.add.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.111833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111952s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002188s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002523s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002084s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009314s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002507s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002585s ]
+
+[ 2014-03-06T00:42:04+08:00 ] 127.0.0.1 /eschool/admin.php/Test/index?_=1394037724545
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002744s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002865s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002562s ]
+SQL: SHOW COLUMNS FROM `edu_test` [ RunTime:0.002908s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `edu_test` LIMIT 1   [ RunTime:0.001652s ]
+SQL: SELECT * FROM `edu_test` ORDER BY id desc LIMIT 0,10   [ RunTime:0.001115s ]
+SQL: SHOW COLUMNS FROM `edu_cat` [ RunTime:0.003261s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 28 ) LIMIT 1   [ RunTime:0.001717s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000805s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000732s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000810s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 29 ) LIMIT 1   [ RunTime:0.000946s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 28 ) LIMIT 1   [ RunTime:0.000362s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 9 ) LIMIT 1   [ RunTime:0.000394s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 25 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 14 ) LIMIT 1   [ RunTime:0.000565s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 15 ) LIMIT 1   [ RunTime:0.000529s ]
+NOTIC: [8] Undefined variable: search C:\AppServ\www\eschool\Admin\Lib\Action\CommonAction.class.php 第 310 行.
+NOTIC: [8] Undefined index:  values C:\AppServ\www\eschool\Admin\Lib\Action\CommonAction.class.php 第 311 行.
+NOTIC: [8] Undefined index:  id C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 179 行.
+SQL: SELECT `id`,`name`,`path` FROM `edu_cat` ORDER BY concat(path,id)  [ RunTime:0.000650s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  _order C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 32 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 34 行.
+NOTIC: [8] Undefined index:  title C:\AppServ\www\eschool\Admin\Runtime\Cache\27936ffbb68ef4d959ca7516f4b36f2666750584.file.index.html.php 第 44 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\27936ffbb68ef4d959ca7516f4b36f2666750584.file.index.html.php 第 75 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041430s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000840s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000840s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000797s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000933s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003691s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001136s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001212s ]
+
+[ 2014-03-06T00:42:43+08:00 ] 127.0.0.1 /eschool/admin.php/Test/addquest/tid/23/navTabId/listtest?_=1394037762811
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001391s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001517s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for ./Admin/Runtime/Cache\e5c7c151efc81e7e15a280e703fa316f359346cd.file.addquest.html.php C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(./Admin/Runtime/Cache\e5c7c151efc81e7e15a280e703fa316f359346cd.file.addquest.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+NOTIC: [8] Undefined index:  currentPage C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 28 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 28 行.
+NOTIC: [8] Undefined index:  numPerPage C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 30 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 30 行.
+NOTIC: [8] Undefined index:  _order C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 32 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 34 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.190368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.190503s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002822s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002929s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002114s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002947s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011150s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002776s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002876s ]
+

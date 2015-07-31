@@ -1,0 +1,413 @@
+[ 2014-03-05T23:31:33+08:00 ] 127.0.0.1 /eschool/admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+
+[ 2014-03-05T23:31:33+08:00 ] 127.0.0.1 /eschool/admin.php/Public/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001599s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001736s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for ./Admin/Runtime/Cache\754afcf016435756ef11c645ae70896ba2ab8d15.file.login.html.php C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(./Admin/Runtime/Cache\754afcf016435756ef11c645ae70896ba2ab8d15.file.login.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+NOTIC: [8] Undefined index:  errorinfo C:\AppServ\www\eschool\Admin\Runtime\Cache\754afcf016435756ef11c645ae70896ba2ab8d15.file.login.html.php 第 74 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\eschool\Admin\Runtime\Cache\754afcf016435756ef11c645ae70896ba2ab8d15.file.login.html.php 第 74 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.174494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.174734s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002446s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002672s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003022s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012291s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.006605s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006803s ]
+
+[ 2014-03-05T23:31:34+08:00 ] 127.0.0.1 /eschool/admin.php/Public/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001368s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001489s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001464s ]
+
+[ 2014-03-05T23:31:41+08:00 ] 127.0.0.1 /eschool/admin.php/Public/checkLogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001351s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001469s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `edu_users` [ RunTime:0.004203s ]
+SQL: SELECT * FROM `edu_users` WHERE ( username = 'admin' ) LIMIT 1   [ RunTime:0.001634s ]
+SQL: SELECT * FROM `edu_users` WHERE ( `id` = 55 ) LIMIT 1   [ RunTime:0.000588s ]
+SQL: UPDATE `edu_users` SET `username`='admin',`userpass`='96e79218965eb72c92a549dd5a330112',`name`='管理员',`sex`=1,`age`=22,`email`='admin@admin.com',`class`='lamp74',`picture`='530e9f9d3b45b.jpg',`level`=10,`point`=999,`addtime`=1393430863,`introduce`='无',`logintime`=1393852340,`logouttime`=1393472539,`loginnum`=27 WHERE ( `id` = 55 ) [ RunTime:0.000668s ]
+SQL: select n.mname,n.aname from edu_userrole ur,edu_role_node rn,edu_node n where ur.rid=rn.rid and rn.nid=n.id and ur.uid=55 [ RunTime:0.139737s ]
+SQL: SHOW COLUMNS FROM `edu_userrole` [ RunTime:0.004106s ]
+SQL: SELECT * FROM `edu_userrole` WHERE ( uid='55' )  [ RunTime:0.002531s ]
+
+[ 2014-03-05T23:31:41+08:00 ] 127.0.0.1 /eschool/admin.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001520s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001667s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001767s ]
+SQL: SHOW COLUMNS FROM `edu_users` [ RunTime:0.003255s ]
+SQL: SELECT * FROM `edu_users` WHERE ( `id` = 55 ) LIMIT 1   [ RunTime:0.001045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `edu_users` WHERE (  (`addtime` BETWEEN '1393472539' AND '1394033501' ) ) LIMIT 1   [ RunTime:0.172546s ]
+SQL: SHOW COLUMNS FROM `edu_video` [ RunTime:0.004145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `edu_video` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.001253s ]
+SQL: SHOW COLUMNS FROM `edu_library` [ RunTime:0.003169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `edu_library` WHERE ( status=1 ) LIMIT 1   [ RunTime:0.001557s ]
+SQL: SHOW COLUMNS FROM `edu_clicknum` [ RunTime:0.003601s ]
+SQL: SELECT * FROM `edu_clicknum` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001046s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for ./Admin/Runtime/Cache\46433abaf19f4a45af2d886fe791fa1fa6390c68.file.index.html.php C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(./Admin/Runtime/Cache\46433abaf19f4a45af2d886fe791fa1fa6390c68.file.index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.258377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.258510s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002282s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002901s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002246s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010155s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002718s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002849s ]
+
+[ 2014-03-05T23:32:23+08:00 ] 127.0.0.1 /eschool/admin.php/Library/index?_=1394033542777
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003415s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003577s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002648s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `edu_library` LIMIT 1   [ RunTime:0.000789s ]
+SQL: SELECT * FROM `edu_library` ORDER BY id desc LIMIT 0,10   [ RunTime:0.001491s ]
+SQL: SHOW COLUMNS FROM `edu_users` [ RunTime:0.026009s ]
+SQL: SHOW COLUMNS FROM `edu_cat` [ RunTime:0.003733s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 63 ) LIMIT 1   [ RunTime:0.001719s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000724s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 95 ) LIMIT 1   [ RunTime:0.000521s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.000477s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 95 ) LIMIT 1   [ RunTime:0.000487s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.001105s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.001024s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 9 ) LIMIT 1   [ RunTime:0.001277s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 70 ) LIMIT 1   [ RunTime:0.000702s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 27 ) LIMIT 1   [ RunTime:0.000507s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 70 ) LIMIT 1   [ RunTime:0.000668s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 11 ) LIMIT 1   [ RunTime:0.000926s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 69 ) LIMIT 1   [ RunTime:0.000685s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000542s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 69 ) LIMIT 1   [ RunTime:0.000501s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000649s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 67 ) LIMIT 1   [ RunTime:0.000479s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000630s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 69 ) LIMIT 1   [ RunTime:0.000991s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 9 ) LIMIT 1   [ RunTime:0.000831s ]
+NOTIC: [8] Undefined variable: search C:\AppServ\www\eschool\Admin\Lib\Action\CommonAction.class.php 第 310 行.
+NOTIC: [8] Undefined index:  values C:\AppServ\www\eschool\Admin\Lib\Action\CommonAction.class.php 第 311 行.
+NOTIC: [8] Undefined index:  id C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 179 行.
+SQL: SELECT `id`,`name`,`path` FROM `edu_cat` ORDER BY concat(path,id)  [ RunTime:0.001670s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for ./Admin/Runtime/Cache\68b8faa12b2473ad5f86c5375814ba75b59cef6d.file.index.html.php C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(./Admin/Runtime/Cache\68b8faa12b2473ad5f86c5375814ba75b59cef6d.file.index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for ./Admin/Runtime/Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(./Admin/Runtime/Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+NOTIC: [8] Undefined index:  _order C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 32 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 34 行.
+NOTIC: [8] Undefined index:  title C:\AppServ\www\eschool\Admin\Runtime\Cache\68b8faa12b2473ad5f86c5375814ba75b59cef6d.file.index.html.php 第 49 行.
+NOTIC: [8] Undefined index:  username C:\AppServ\www\eschool\Admin\Runtime\Cache\68b8faa12b2473ad5f86c5375814ba75b59cef6d.file.index.html.php 第 53 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\68b8faa12b2473ad5f86c5375814ba75b59cef6d.file.index.html.php 第 79 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.380238s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.380355s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002327s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002685s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002091s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009690s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002975s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003180s ]
+
+[ 2014-03-05T23:32:26+08:00 ] 127.0.0.1 /eschool/admin.php/Video/index?_=1394033545821
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002718s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002832s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002726s ]
+SQL: SHOW COLUMNS FROM `edu_video` [ RunTime:0.003823s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `edu_video` LIMIT 1   [ RunTime:0.001873s ]
+SQL: SELECT * FROM `edu_video` ORDER BY id desc LIMIT 0,10   [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `edu_users` [ RunTime:0.004146s ]
+SQL: SHOW COLUMNS FROM `edu_cat` [ RunTime:0.004282s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 63 ) LIMIT 1   [ RunTime:0.002078s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 11 ) LIMIT 1   [ RunTime:0.000582s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 65 ) LIMIT 1   [ RunTime:0.000846s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 26 ) LIMIT 1   [ RunTime:0.000754s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 65 ) LIMIT 1   [ RunTime:0.000421s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000372s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 65 ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 17 ) LIMIT 1   [ RunTime:0.000588s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 93 ) LIMIT 1   [ RunTime:0.000570s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 29 ) LIMIT 1   [ RunTime:0.000991s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.001199s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 29 ) LIMIT 1   [ RunTime:0.000702s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 19 ) LIMIT 1   [ RunTime:0.000432s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 70 ) LIMIT 1   [ RunTime:0.000372s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 17 ) LIMIT 1   [ RunTime:0.000374s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 69 ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000377s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 69 ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 23 ) LIMIT 1   [ RunTime:0.000357s ]
+NOTIC: [8] Undefined variable: search C:\AppServ\www\eschool\Admin\Lib\Action\CommonAction.class.php 第 310 行.
+NOTIC: [8] Undefined index:  values C:\AppServ\www\eschool\Admin\Lib\Action\CommonAction.class.php 第 311 行.
+NOTIC: [8] Undefined index:  id C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 179 行.
+SQL: SELECT `id`,`name`,`path` FROM `edu_cat` ORDER BY concat(path,id)  [ RunTime:0.000757s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for ./Admin/Runtime/Cache\8bda5c121dc61930d0dd84fa7a1d8506b8232520.file.index.html.php C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(./Admin/Runtime/Cache\8bda5c121dc61930d0dd84fa7a1d8506b8232520.file.index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+NOTIC: [8] Undefined index:  _order C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 32 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 34 行.
+NOTIC: [8] Undefined index:  videoname C:\AppServ\www\eschool\Admin\Runtime\Cache\8bda5c121dc61930d0dd84fa7a1d8506b8232520.file.index.html.php 第 49 行.
+NOTIC: [8] Undefined index:  username C:\AppServ\www\eschool\Admin\Runtime\Cache\8bda5c121dc61930d0dd84fa7a1d8506b8232520.file.index.html.php 第 53 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\8bda5c121dc61930d0dd84fa7a1d8506b8232520.file.index.html.php 第 79 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.224052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.224165s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002453s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002554s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002136s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009849s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002671s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002792s ]
+
+[ 2014-03-05T23:32:27+08:00 ] 127.0.0.1 /eschool/admin.php/Library/index?_=1394033547216
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002984s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003143s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002741s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `edu_library` LIMIT 1   [ RunTime:0.000628s ]
+SQL: SELECT * FROM `edu_library` ORDER BY id desc LIMIT 0,10   [ RunTime:0.001341s ]
+SQL: SHOW COLUMNS FROM `edu_users` [ RunTime:0.003622s ]
+SQL: SHOW COLUMNS FROM `edu_cat` [ RunTime:0.005124s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 63 ) LIMIT 1   [ RunTime:0.001577s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000419s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 95 ) LIMIT 1   [ RunTime:0.000766s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.000641s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 95 ) LIMIT 1   [ RunTime:0.000544s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.000409s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.000379s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 9 ) LIMIT 1   [ RunTime:0.000471s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 70 ) LIMIT 1   [ RunTime:0.000398s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 27 ) LIMIT 1   [ RunTime:0.000373s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 70 ) LIMIT 1   [ RunTime:0.000662s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 11 ) LIMIT 1   [ RunTime:0.000745s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 69 ) LIMIT 1   [ RunTime:0.000597s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.001499s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 69 ) LIMIT 1   [ RunTime:0.001934s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 10 ) LIMIT 1   [ RunTime:0.000917s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 67 ) LIMIT 1   [ RunTime:0.000916s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000476s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 69 ) LIMIT 1   [ RunTime:0.000413s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 9 ) LIMIT 1   [ RunTime:0.000389s ]
+NOTIC: [8] Undefined variable: search C:\AppServ\www\eschool\Admin\Lib\Action\CommonAction.class.php 第 310 行.
+NOTIC: [8] Undefined index:  values C:\AppServ\www\eschool\Admin\Lib\Action\CommonAction.class.php 第 311 行.
+NOTIC: [8] Undefined index:  id C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 179 行.
+SQL: SELECT `id`,`name`,`path` FROM `edu_cat` ORDER BY concat(path,id)  [ RunTime:0.001049s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  _order C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 32 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 34 行.
+NOTIC: [8] Undefined index:  title C:\AppServ\www\eschool\Admin\Runtime\Cache\68b8faa12b2473ad5f86c5375814ba75b59cef6d.file.index.html.php 第 49 行.
+NOTIC: [8] Undefined index:  username C:\AppServ\www\eschool\Admin\Runtime\Cache\68b8faa12b2473ad5f86c5375814ba75b59cef6d.file.index.html.php 第 53 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\68b8faa12b2473ad5f86c5375814ba75b59cef6d.file.index.html.php 第 79 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041559s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001014s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000978s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001121s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000918s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004326s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001209s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001322s ]
+
+[ 2014-03-05T23:33:26+08:00 ] 127.0.0.1 /eschool/admin.php/Video/index?_=1394033606706
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001387s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001513s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+SQL: SHOW COLUMNS FROM `edu_video` [ RunTime:0.003799s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `edu_video` LIMIT 1   [ RunTime:0.001436s ]
+SQL: SELECT * FROM `edu_video` ORDER BY id desc LIMIT 0,10   [ RunTime:0.001439s ]
+SQL: SHOW COLUMNS FROM `edu_users` [ RunTime:0.004095s ]
+SQL: SHOW COLUMNS FROM `edu_cat` [ RunTime:0.004500s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 63 ) LIMIT 1   [ RunTime:0.002031s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 11 ) LIMIT 1   [ RunTime:0.001071s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 65 ) LIMIT 1   [ RunTime:0.000772s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 26 ) LIMIT 1   [ RunTime:0.000807s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 65 ) LIMIT 1   [ RunTime:0.000795s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.000813s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 65 ) LIMIT 1   [ RunTime:0.000694s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 17 ) LIMIT 1   [ RunTime:0.001154s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 93 ) LIMIT 1   [ RunTime:0.000783s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 29 ) LIMIT 1   [ RunTime:0.000559s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.000693s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 29 ) LIMIT 1   [ RunTime:0.000865s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.001428s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 19 ) LIMIT 1   [ RunTime:0.001713s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 70 ) LIMIT 1   [ RunTime:0.001066s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 17 ) LIMIT 1   [ RunTime:0.001582s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 69 ) LIMIT 1   [ RunTime:0.001341s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 13 ) LIMIT 1   [ RunTime:0.001181s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 69 ) LIMIT 1   [ RunTime:0.001375s ]
+SQL: SELECT `name` FROM `edu_cat` WHERE ( `id` = 23 ) LIMIT 1   [ RunTime:0.001070s ]
+NOTIC: [8] Undefined variable: search C:\AppServ\www\eschool\Admin\Lib\Action\CommonAction.class.php 第 310 行.
+NOTIC: [8] Undefined index:  values C:\AppServ\www\eschool\Admin\Lib\Action\CommonAction.class.php 第 311 行.
+NOTIC: [8] Undefined index:  id C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 179 行.
+SQL: SELECT `id`,`name`,`path` FROM `edu_cat` ORDER BY concat(path,id)  [ RunTime:0.001815s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  _order C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 32 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 34 行.
+NOTIC: [8] Undefined index:  videoname C:\AppServ\www\eschool\Admin\Runtime\Cache\8bda5c121dc61930d0dd84fa7a1d8506b8232520.file.index.html.php 第 49 行.
+NOTIC: [8] Undefined index:  username C:\AppServ\www\eschool\Admin\Runtime\Cache\8bda5c121dc61930d0dd84fa7a1d8506b8232520.file.index.html.php 第 53 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\8bda5c121dc61930d0dd84fa7a1d8506b8232520.file.index.html.php 第 79 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027245s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000962s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000816s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000650s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003643s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001399s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001538s ]
+
+[ 2014-03-05T23:34:18+08:00 ] 127.0.0.1 /eschool/admin.php/Note/index?_=1394033658344
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001825s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001992s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+SQL: SHOW COLUMNS FROM `edu_note` [ RunTime:0.003861s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `edu_note` LIMIT 1   [ RunTime:0.001618s ]
+SQL: SELECT * FROM `edu_note` ORDER BY id desc LIMIT 0,10   [ RunTime:0.001185s ]
+SQL: SHOW COLUMNS FROM `edu_users` [ RunTime:0.004784s ]
+SQL: SHOW COLUMNS FROM `edu_video` [ RunTime:0.005331s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 63 ) LIMIT 1   [ RunTime:0.001680s ]
+SQL: SELECT `videoname` FROM `edu_video` WHERE ( `id` = 47 ) LIMIT 1   [ RunTime:0.000710s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 95 ) LIMIT 1   [ RunTime:0.000900s ]
+SQL: SELECT `videoname` FROM `edu_video` WHERE ( `id` = 52 ) LIMIT 1   [ RunTime:0.000591s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 63 ) LIMIT 1   [ RunTime:0.000861s ]
+SQL: SELECT `videoname` FROM `edu_video` WHERE ( `id` = 43 ) LIMIT 1   [ RunTime:0.000787s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 63 ) LIMIT 1   [ RunTime:0.000526s ]
+SQL: SELECT `videoname` FROM `edu_video` WHERE ( `id` = 44 ) LIMIT 1   [ RunTime:0.000497s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 63 ) LIMIT 1   [ RunTime:0.000417s ]
+SQL: SELECT `videoname` FROM `edu_video` WHERE ( `id` = 50 ) LIMIT 1   [ RunTime:0.000675s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 63 ) LIMIT 1   [ RunTime:0.000619s ]
+SQL: SELECT `videoname` FROM `edu_video` WHERE ( `id` = 42 ) LIMIT 1   [ RunTime:0.000492s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 70 ) LIMIT 1   [ RunTime:0.000402s ]
+SQL: SELECT `videoname` FROM `edu_video` WHERE ( `id` = 48 ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 75 ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SELECT `videoname` FROM `edu_video` WHERE ( `id` = 52 ) LIMIT 1   [ RunTime:0.000361s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 62 ) LIMIT 1   [ RunTime:0.000496s ]
+SQL: SELECT `videoname` FROM `edu_video` WHERE ( `id` = 42 ) LIMIT 1   [ RunTime:0.000468s ]
+SQL: SELECT `username` FROM `edu_users` WHERE ( `id` = 76 ) LIMIT 1   [ RunTime:0.000367s ]
+SQL: SELECT `videoname` FROM `edu_video` WHERE ( `id` = 45 ) LIMIT 1   [ RunTime:0.000357s ]
+NOTIC: [8] Undefined variable: search C:\AppServ\www\eschool\Admin\Lib\Action\CommonAction.class.php 第 310 行.
+NOTIC: [8] Undefined index:  values C:\AppServ\www\eschool\Admin\Lib\Action\CommonAction.class.php 第 311 行.
+NOTIC: [8] Undefined index:  id C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 179 行.
+SQL: SHOW COLUMNS FROM `edu_cat` [ RunTime:0.004293s ]
+SQL: SELECT `id`,`name`,`path` FROM `edu_cat` ORDER BY concat(path,id)  [ RunTime:0.001855s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for ./Admin/Runtime/Cache\70cb5ef87f46d5a940520e4b1135932a2e33cb13.file.index.html.php C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(./Admin/Runtime/Cache\70cb5ef87f46d5a940520e4b1135932a2e33cb13.file.index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+NOTIC: [8] Undefined index:  _order C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 32 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 34 行.
+NOTIC: [8] Undefined index:  username C:\AppServ\www\eschool\Admin\Runtime\Cache\70cb5ef87f46d5a940520e4b1135932a2e33cb13.file.index.html.php 第 42 行.
+NOTIC: [8] Undefined index:  videoname C:\AppServ\www\eschool\Admin\Runtime\Cache\70cb5ef87f46d5a940520e4b1135932a2e33cb13.file.index.html.php 第 46 行.
+NOTIC: [8] Undefined index:  content C:\AppServ\www\eschool\Admin\Runtime\Cache\70cb5ef87f46d5a940520e4b1135932a2e33cb13.file.index.html.php 第 50 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\70cb5ef87f46d5a940520e4b1135932a2e33cb13.file.index.html.php 第 76 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.289332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.289454s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002388s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002309s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002133s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009375s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002898s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002987s ]
+
+[ 2014-03-05T23:55:56+08:00 ] 127.0.0.1 /eschool/admin.php/Cat/index?_=1394034956488
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001361s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001486s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+SQL: SHOW COLUMNS FROM `edu_cat` [ RunTime:0.003616s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `edu_cat` WHERE ( `pid` = '0' ) LIMIT 1   [ RunTime:0.001686s ]
+SQL: SELECT * FROM `edu_cat` WHERE ( `pid` = '0' ) ORDER BY id asc LIMIT 0,15   [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `edu_users` [ RunTime:0.005217s ]
+NOTIC: [8] Undefined index:  uid C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 125 行.
+SQL: SELECT `username` FROM `edu_users` LIMIT 1   [ RunTime:0.001873s ]
+NOTIC: [8] Undefined index:  uid C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 125 行.
+SQL: SELECT `username` FROM `edu_users` LIMIT 1   [ RunTime:0.000268s ]
+NOTIC: [8] Undefined index:  uid C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 125 行.
+SQL: SELECT `username` FROM `edu_users` LIMIT 1   [ RunTime:0.000237s ]
+NOTIC: [8] Undefined index:  uid C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 125 行.
+SQL: SELECT `username` FROM `edu_users` LIMIT 1   [ RunTime:0.000213s ]
+NOTIC: [8] Undefined index:  uid C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 125 行.
+SQL: SELECT `username` FROM `edu_users` LIMIT 1   [ RunTime:0.000242s ]
+NOTIC: [8] Undefined index:  uid C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 125 行.
+SQL: SELECT `username` FROM `edu_users` LIMIT 1   [ RunTime:0.000494s ]
+NOTIC: [8] Undefined index:  uid C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 125 行.
+SQL: SELECT `username` FROM `edu_users` LIMIT 1   [ RunTime:0.000504s ]
+NOTIC: [8] Undefined index:  uid C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 125 行.
+SQL: SELECT `username` FROM `edu_users` LIMIT 1   [ RunTime:0.000330s ]
+NOTIC: [8] Undefined index:  uid C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 125 行.
+SQL: SELECT `username` FROM `edu_users` LIMIT 1   [ RunTime:0.000364s ]
+NOTIC: [8] Undefined index:  cid C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 81 行.
+NOTIC: [8] Undefined variable: search C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 101 行.
+NOTIC: [8] Undefined index:  values C:\AppServ\www\eschool\Admin\Lib\Action\CatAction.class.php 第 102 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for ./Admin/Runtime/Cache\d7064a106058fb5b4a68cbe3af83faa3c0c13d62.file.index.html.php C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_resource.php 第 683 行.
+NOTIC: [2] unlink(./Admin/Runtime/Cache\d7064a106058fb5b4a68cbe3af83faa3c0c13d62.file.index.html.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory C:\AppServ\www\eschool\ThinkPHP\Extend\Vendor\Smarty\sysplugins\smarty_internal_write_file.php 第 49 行.
+NOTIC: [8] Undefined index:  _order C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 32 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\9b58476071dcf322d7a032b16e5bfba3e2c4a166.file.pagerForm.html.php 第 34 行.
+NOTIC: [8] Undefined index:  menu C:\AppServ\www\eschool\Admin\Runtime\Cache\d7064a106058fb5b4a68cbe3af83faa3c0c13d62.file.index.html.php 第 43 行.
+NOTIC: [8] Trying to get property of non-object C:\AppServ\www\eschool\Admin\Runtime\Cache\d7064a106058fb5b4a68cbe3af83faa3c0c13d62.file.index.html.php 第 43 行.
+NOTIC: [8] Undefined index:  _sort C:\AppServ\www\eschool\Admin\Runtime\Cache\d7064a106058fb5b4a68cbe3af83faa3c0c13d62.file.index.html.php 第 71 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.213682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.213875s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003386s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003385s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002240s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012056s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003005s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003096s ]
+
